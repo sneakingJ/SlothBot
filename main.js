@@ -45,7 +45,7 @@ client.on('message', msg => {
 	}
 	catch (error) {
 		console.error(error);
-		msg.reply(`There was an error trying to execute that command!`);
+		msg.reply('There was an error trying to execute that command!');
 	}
 });
 
@@ -67,7 +67,7 @@ function validatePermission(command, msg) {
 
 function validateArgs(command, args, msg) {
 	if (command.args && !args.length) {
-		let reply = `You didn't provide any arguments!`;
+		let reply = 'You didn\'t provide any arguments!';
 		if (command.usage) {
 			reply += `\nThe proper usage would be: '${process.env.COMMAND_PREFIX}${command.name} ${command.usage}'.`;
 		}
