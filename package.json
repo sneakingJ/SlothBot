@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "eslint": "^7.28.0"
+  },
+  "scripts": {
+    "test": "eslint --ignore-path .gitignore ."
   }
 }
