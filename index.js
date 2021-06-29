@@ -67,6 +67,6 @@ client.on('guildMemberUpdate', async (beforeUpdateMember, afterUpdateMember) => 
 	const verifiedRole = afterUpdateMember.guild.roles.cache.find(role => role.name === 'Verified');
 
 	await afterUpdateMember.roles.add(verifiedRole);
-})
+});
 
 client.login(process.env.TOKEN);
